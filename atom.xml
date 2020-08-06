@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://siqindong.github.io/"/>
-  <updated>2020-08-06T00:57:08.901Z</updated>
+  <updated>2020-08-06T01:03:06.510Z</updated>
   <id>https://siqindong.github.io/</id>
   
   <author>
@@ -21,18 +21,15 @@
     <link href="https://siqindong.github.io/2020/08/05/Math-test/"/>
     <id>https://siqindong.github.io/2020/08/05/Math-test/</id>
     <published>2020-08-06T00:52:43.000Z</published>
-    <updated>2020-08-06T00:57:08.901Z</updated>
+    <updated>2020-08-06T01:03:06.510Z</updated>
     
-    <content type="html"><![CDATA[<p>#Math test</p><p>##This a math test</p><p>#Introduction</p><p>In supervised learning, we often use parametric models $p(\mathbf{y} \lvert \mathbf{X},\boldsymbol\theta)$ to explain data and infer optimal values of parameter $\boldsymbol\theta$ via <a href="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation">maximum likelihood</a> or <a href="https://de.wikipedia.org/wiki/Maximum_a_posteriori">maximum a posteriori</a> estimation. If needed we can also infer a full <a href="https://en.wikipedia.org/wiki/Posterior_probability">posterior distribution</a> $p(\boldsymbol\theta \lvert \mathbf{X},\mathbf{y})$ instead of a point estimate $\boldsymbol{\hat\theta}$. With increasing data complexity, models with a higher number of parameters are usually needed to explain data reasonably well. Methods that use models with a fixed number of parameters are called parametric methods. </p><p>In non-parametric methods, on the other hand, the number of parameters depend on the dataset size. For example, in <a href="https://en.wikipedia.org/wiki/Kernel_regression">Nadaraya-Watson kernel regression</a>, a weight $w_i$ is assigned to each observed target $y_i$ and for predicting the target value at a new point $\mathbf{x}$ a weighted average is computed: </p><p>$$f(\mathbf{x}) = \sum_{i=1}^{N}w_i(\mathbf{x})y_i$$</p><p>$$w_i(\mathbf{x}) = \frac{\kappa(\mathbf{x}, \mathbf{x}<em>{i})}{\sum</em>{i’=1}^{N}\kappa(\mathbf{x}, \mathbf{x}_{i’})}$$</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Math-test"><a href="#Math-test" class="headerlink" title="Math test"></a>Math test</h1><h2 id="This-a-math-test"><a href="#This-a-math-test" class="headerlink" title="This a math test"></a>This a math test</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>In supervised learning, we often use parametric models $p(\mathbf{y} \lvert \mathbf{X},\boldsymbol\theta)$ to explain data and infer optimal values of parameter $\boldsymbol\theta$ via <a href="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation">maximum likelihood</a> or <a href="https://de.wikipedia.org/wiki/Maximum_a_posteriori">maximum a posteriori</a> estimation. If needed we can also infer a full <a href="https://en.wikipedia.org/wiki/Posterior_probability">posterior distribution</a> $p(\boldsymbol\theta \lvert \mathbf{X},\mathbf{y})$ instead of a point estimate $\boldsymbol{\hat\theta}$. With increasing data complexity, models with a higher number of parameters are usually needed to explain data reasonably well. Methods that use models with a fixed number of parameters are called parametric methods. </p><p>In non-parametric methods, on the other hand, the number of parameters depend on the dataset size. For example, in <a href="https://en.wikipedia.org/wiki/Kernel_regression">Nadaraya-Watson kernel regression</a>, a weight $w_i$ is assigned to each observed target $y_i$ and for predicting the target value at a new point $\mathbf{x}$ a weighted average is computed: </p><script type="math/tex; mode=display">f(\mathbf{x}) = \sum_{i=1}^{N}w_i(\mathbf{x})y_i</script><script type="math/tex; mode=display">w_i(\mathbf{x}) = \frac{\kappa(\mathbf{x}, \mathbf{x}_{i})}{\sum_{i'=1}^{N}\kappa(\mathbf{x}, \mathbf{x}_{i'})}</script>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#Math test&lt;/p&gt;
-&lt;p&gt;##This a math test&lt;/p&gt;
-&lt;p&gt;#Introduction&lt;/p&gt;
-&lt;p&gt;In supervised learning, we often use parametric models $p(\mathbf{y} \lv
+        &lt;h1 id=&quot;Math-test&quot;&gt;&lt;a href=&quot;#Math-test&quot; class=&quot;headerlink&quot; title=&quot;Math test&quot;&gt;&lt;/a&gt;Math test&lt;/h1&gt;&lt;h2 id=&quot;This-a-math-test&quot;&gt;&lt;a href=&quot;#This-a-ma
       
     
     </summary>
