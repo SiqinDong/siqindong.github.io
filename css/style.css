@@ -5533,7 +5533,7 @@ pre,
   overflow: auto;
   font-size: 13px;
   color: #4d4d4c;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .highlight .gutter pre,
