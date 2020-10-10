@@ -311,7 +311,7 @@ p(\mathbf{f}_* \lvert \mathbf{X}_*,\mathbf{X},\mathbf{y})
 \begin{align*}
 \boldsymbol{\mu_*} &= \mathbf{K}_*^T \mathbf{K}_y^{-1} \mathbf{y}\tag{4}\label{eq4} \\
 \boldsymbol{\Sigma_*} &= \mathbf{K}_{**} - \mathbf{K}_*^T \mathbf{K}_y^{-1} \mathbf{K}_*\tag{5}\label{eq5}
-\end{align*}</script><p>This is the minimum we need to know for implementing Gaussian processes and applying them to regression problems. For further details, please consult the literature in the <a href="#References">References</a> section. The next section shows how to implement GPs with plain NumPy from scratch, later sections demonstrate how to use GP implementations from <a target="_blank" rel="noopener" href="http://scikit-learn.org/stable/">scikit-learn</a> and <a target="_blank" rel="noopener" href="http://sheffieldml.github.io/GPy/">GPy</a>.</p>
+\end{align*}</script><p>This is the minimum we need to know for implementing Gaussian processes and applying them to regression problems. For further details, please consult the literature in the <a href="#References">References</a> section. The next section shows how to implement GPs with plain NumPy from scratch, later sections demonstrate how to use GP implementations from <a target="_blank" rel="noopener" href="http://scikit-learn.org/stable/">scikit-learn</a>.</p>
 <h2 id="Implementation-with-NumPy"><a href="#Implementation-with-NumPy" class="headerlink" title="Implementation with NumPy"></a>Implementation with NumPy</h2><p>Here, we will use the squared exponential kernel, also known as Gaussian kernel or RBF kernel:</p>
 <script type="math/tex; mode=display">
 \kappa(\mathbf{x}_i,\mathbf{x}_j) = \sigma_f^2 \exp(-\frac{1}{2l^2}
