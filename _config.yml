@@ -16,8 +16,8 @@ timezone: ''
 url: https://siqindong.github.io
 root: /
 # Year of Site Creation | 网站成立年份
-since: 2016
-permalink: :year/:month/:day/:title/
+since: 2020
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -125,3 +125,12 @@ neat_js:
   compress:
   exclude:
     - '*.min.js'
+
+# emoji
+githubEmojis:
+  enable: true
+  className: github-emoji
+  unicode: false
+  styles:
+    display: inline
+  localEmojis:

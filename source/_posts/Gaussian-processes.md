@@ -1,7 +1,8 @@
 ---
 title: Gaussian processes
 date: 2020-10-09 10:54:55
-tags:
+tags: 
+categories:
 ---
 ## Introduction
 
