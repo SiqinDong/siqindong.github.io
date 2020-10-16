@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://siqindong.github.io/"/>
-  <updated>2020-10-11T00:23:15.614Z</updated>
+  <updated>2020-10-16T04:11:30.454Z</updated>
   <id>https://siqindong.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PID</title>
+    <link href="https://siqindong.github.io/PID/"/>
+    <id>https://siqindong.github.io/PID/</id>
+    <published>2020-10-16T01:59:16.000Z</published>
+    <updated>2020-10-16T04:11:30.454Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> PWM_pin = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">double</span> sensed_output = <span class="number">0.0</span>;</span><br><span class="line"><span class="keyword">double</span> setpoint = <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">double</span> total_error = <span class="number">0</span>, previous_error = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> T; <span class="comment">//sample time in milliseconds (ms)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">double</span> Kp; <span class="comment">//proportional gain</span></span><br><span class="line"><span class="keyword">double</span> Ki; <span class="comment">//integral gain</span></span><br><span class="line"><span class="keyword">double</span> Kd; <span class="comment">//derivative gain</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">double</span> PID_P = <span class="number">0</span>;    <span class="keyword">int</span> PID_I = <span class="number">0</span>;    <span class="keyword">int</span> PID_D = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">double</span> PID_value = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> max_control_signal = <span class="number">255</span>; <span class="comment">//We define PWM range between 0 and 255</span></span><br><span class="line"><span class="keyword">int</span> min_control_signal = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>{</span><br><span class="line"></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>{</span><br><span class="line">  </span><br><span class="line">  PID_Control(); <span class="comment">//calls the PID function every T interval and outputs a control signal</span></span><br><span class="line">   </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PID_Control</span><span class="params">()</span></span>{</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">double</span> error = setpoint - sensed_output;</span><br><span class="line">  PID_P = Kp * error;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span>(<span class="number">-3</span> &lt; error &lt; <span class="number">3</span>){</span><br><span class="line">   PID_I = PID_I + (Ki * error); </span><br><span class="line">  }</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">double</span> delta_error = error - previous_error; <span class="comment">//difference of error for derivative term</span></span><br><span class="line">  PID_D = Kd*(delta_error/T);</span><br><span class="line">  </span><br><span class="line">  PID_value = PID_P + PID_I + PID_D; <span class="comment">//PID control compute </span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (PID_value &gt;= max_control_signal) </span><br><span class="line">  {   PID_value = max_control_signal;   }</span><br><span class="line">  <span class="keyword">if</span> (PID_value &lt;= min_control_signal) </span><br><span class="line">  {   PID_value = min_control_signal;   }</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//Now we can write the PWM signal to the mosfet on digital pin D3</span></span><br><span class="line">  analogWrite(PWM_pin,PID_value);</span><br><span class="line">  previous_error = error;</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span cl
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Gaussian processes</title>
