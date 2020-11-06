@@ -5544,6 +5544,12 @@ pre,
 .highlight .gutter pre,
 .gist .gist-file .gist-data .line-numbers {
   color: #666;
+
+  /* 设置代码段序号文字无法选择 */
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 
 code {
@@ -5551,6 +5557,7 @@ code {
   padding: 0.2em 0.4em;
   margin: 0 0.3em;
   color: #555;
+  /* 行内代码颜色及背景 */
   background: #eee;
   border-radius: 3px;
   font-size: 85%;
