@@ -634,7 +634,7 @@ $(function () {
       $('.highlight').each(function (i, e) {
         var $wrap = $('<div>').addClass('highlight-wrap')
         $(e).after($wrap)
-        $wrap.append($('<button>').addClass('copy-btn').append('copy').on('click', function (e) {
+        $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
           var code = $(this).parent().find(".code")[0].innerText
           
           var ta = document.createElement('textarea')
@@ -648,19 +648,34 @@ $(function () {
           var result = document.execCommand('copy')
           document.body.removeChild(ta)
           
-            if(result)$(this).text('copied')
-            else $(this).text('copy failed')
+            if(result)$(this).text('Copied')
+            else $(this).text('Copy failed')
           
           $(this).blur()
         })).on('mouseleave', function (e) {
           var $b = $(this).find('.copy-btn')
           setTimeout(function () {
-            $b.text('copy')
+            $b.text('Copy')
           }, 300)
         }).append(e)
       })
     })
-  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
