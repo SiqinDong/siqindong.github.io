@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://siqindong.github.io/Gaussian%20processes/</loc>
+    <loc>https://siqindong.github.io/Gaussian%20Processes/</loc>
     
-    <lastmod>2020-11-06</lastmod>
+    <lastmod>2020-11-15</lastmod>
     
   </url>
   
@@ -60,7 +60,7 @@
 
   <url>
     <loc>https://siqindong.github.io/</loc>
-    <lastmod>2020-11-06</lastmod>
+    <lastmod>2020-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,7 +68,7 @@
   
   <url>
     <loc>https://siqindong.github.io/tags/Arduino/</loc>
-    <lastmod>2020-11-06</lastmod>
+    <lastmod>2020-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
