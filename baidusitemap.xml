@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://siqindong.github.io/Gaussian%20Processes/</loc>
+    <loc>https://siqindong.github.io/Fourier-transform/</loc>
+    <lastmod>2020-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://siqindong.github.io/Gaussian-Processes/</loc>
     <lastmod>2020-11-15</lastmod>
   </url>
   <url>
-    <loc>https://siqindong.github.io/PID%20temperature%20control/</loc>
+    <loc>https://siqindong.github.io/PID-temperature-control/</loc>
     <lastmod>2020-11-03</lastmod>
   </url>
 </urlset> 

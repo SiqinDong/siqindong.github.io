@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://siqindong.github.io/"/>
-  <updated>2020-11-15T00:51:41.214Z</updated>
+  <updated>2020-11-17T01:28:37.631Z</updated>
   <id>https://siqindong.github.io/</id>
   
   <author>
@@ -17,9 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Fourier transform</title>
+    <link href="https://siqindong.github.io/Fourier-transform/"/>
+    <id>https://siqindong.github.io/Fourier-transform/</id>
+    <published>2020-11-17T01:28:37.000Z</published>
+    <updated>2020-11-17T01:28:37.631Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Gaussian Processes</title>
-    <link href="https://siqindong.github.io/Gaussian%20Processes/"/>
-    <id>https://siqindong.github.io/Gaussian%20Processes/</id>
+    <link href="https://siqindong.github.io/Gaussian-Processes/"/>
+    <id>https://siqindong.github.io/Gaussian-Processes/</id>
     <published>2020-11-14T05:11:14.000Z</published>
     <updated>2020-11-15T00:51:41.214Z</updated>
     
@@ -40,8 +55,8 @@
   
   <entry>
     <title>PID temperature control</title>
-    <link href="https://siqindong.github.io/PID%20temperature%20control/"/>
-    <id>https://siqindong.github.io/PID%20temperature%20control/</id>
+    <link href="https://siqindong.github.io/PID-temperature-control/"/>
+    <id>https://siqindong.github.io/PID-temperature-control/</id>
     <published>2020-10-16T01:59:16.000Z</published>
     <updated>2020-11-03T18:11:24.719Z</updated>
     
