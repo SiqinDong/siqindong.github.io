@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://siqindong.github.io/"/>
-  <updated>2020-12-16T20:45:49.714Z</updated>
+  <updated>2021-02-14T00:14:37.700Z</updated>
   <id>https://siqindong.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Kalman Filter Part 1 递归算法 Recursive Processing</title>
+    <title>Kalman Filter Part 1 - Recursive Processing</title>
     <link href="https://siqindong.github.io/Kalman-Filter/"/>
     <id>https://siqindong.github.io/Kalman-Filter/</id>
     <published>2020-12-17T01:28:37.000Z</published>
-    <updated>2020-12-16T20:45:49.714Z</updated>
+    <updated>2021-02-14T00:14:37.700Z</updated>
     
     <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=" "></a> </h2>]]></content>
     
